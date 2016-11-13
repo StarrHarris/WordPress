@@ -1,14 +1,16 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
 <!--MAIN-->
 <div class="main">
+   
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
   
         <img class="slider" src="images/placeimg_800_250_any.jpg" alt="placeholder">
  
       <div class="caption">
        
-            <h1>Starr Harris Print &amp; Web Design</h1>
+            <h1><?php the_title(); ?></h1>
             <p><b>Lorem ipsum dolor sit amet,</b> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea common.
             </p>
 
@@ -48,4 +50,4 @@
 </div>
    
 <?php get_footer();?>
-       
+    
