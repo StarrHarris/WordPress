@@ -13,13 +13,12 @@ License URI:
 */
 
 
+/*funtion to make one menu options appear
+
 function register_my_menu(){
     register_nav_menu('header-menu' ,_( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
-
-
-
 
 
 /*funtion to make two menu options appear
@@ -33,9 +32,13 @@ function register_my_menus(){
 }
 add_action( 'init', 'register_my_menus' );
 */
-
-
-
 ?>
+
+<!--from book-->
+
+
+
+<?php register_nav_menus(); ?>
+
 
 
