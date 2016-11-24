@@ -1,16 +1,3 @@
-/*
-Theme Name: starrharris
-Theme URI: https://starrharris.com
-Description: A first attempt at designing a wordpress theme to use for my personal portfolio
-Version: 1.0
-Author: Starr Harris Print and Web Design
-Author URI: http://www.starrharris.com
-Tags: portfolio
-License:
-License URI:
-*/
-
-
 html{
 background-color: black;
 }
@@ -105,7 +92,7 @@ line-height: 1.00;
 background-color: white;
 }
 
-header{
+div.header{
 margin: 0 auto;
 height: 14em;
 padding:2%;
@@ -115,6 +102,10 @@ background-color: white;
 -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
  -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
  box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+}
+
+#logo{
+
 }
 
 img.colorbar{
@@ -132,7 +123,6 @@ max-width: 90%;
 margin-left: 5%;
 margin-top: 2%;
 }
-
 
 
 div.col{
@@ -275,113 +265,7 @@ label {
 }
 
 
-/*wordpress generated classes*/
-/* =WordPress Core
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
 
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}
 
 
 

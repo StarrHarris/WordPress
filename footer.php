@@ -1,12 +1,14 @@
+</div>
+<!--End Content-->
+<!--Begin Footer -->
+<div id="footer">
+<p>&copy;2017 <a href="http://www.starrharris.com">Starr Harris</a>. All rights reserved. <?php wp_loginout(); ?></p>
+</div>
+<!--End Footer-->
 
-    <div class="footer">
-    <p>&copy;<?php echo date('Y');?> Starr Harris Print &amp; Web Design. All rights reserved.</p>
-    </div>
-    
-    <div class="footerimg">
-    <a href="https://www.linkedin.com/in/starr-harris-18ba2510"><img class="socialicon" src="images/LinkedIn-512.png"></a>
-    </div>
-</footer>
+<!--Starr WP Footer -->
 <?php wp_footer(); ?>
-</body>    
+
+<!-- End WP Footer -->
+</body>
 </html>

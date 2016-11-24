@@ -1,43 +1,19 @@
 <?php get_header(); ?>
 
-<!--MAIN-->
-<div class="main">
-   
-    <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<img class="slider" src="<?php echo get_template_directory_uri(); ?>/images/placeimg_800_250_any.jpg" alt="placeholder"> 
-  
- 
-      <div class="caption">
-       
-            <h1><?php the_title(); ?></h1>
-            <?php the_content(); ?>
-        </div>
-    
-<!--body section 2-->
-
-<div class="col">
-    <section>
-    <h2><a class="home" href="<?php the_permalink(); ?>" title="SERVICES <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/placeimg_300_300_any%20(3).jpg" alt="placeholder">  
-    <?php the_content(); ?>
-    </section>    
-    
-    <section>
-    <h2><a class="home" href="<?php the_permalink(); ?>" title="BLOG <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/placeimg_300_300_any%20(3).jpg" alt="placeholder">
-    <?php the_content(); ?>
-    </section>
-
-    <section1>
-    <h2><a class="home" href="<?php the_permalink(); ?>" title="CONTACT <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/placeimg_300_300_any%20(3).jpg" alt="placeholder">
-    <?php the_content(); ?>
-    </section1>
+<!--Begin Content-->
+<div class="caption">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //starts the loop ?>
+    <article id="post-excerpt-<?php the_ID; ?>" class="post-excerpt">
+        <h2><a href="<?php the_permalink(); //link to the posting ?>"><?php the_title(); //the posting title ?></a></h2>
+        <small>Posted on <?php the_time('F J, Y'); ?> by <?php the_author(); ?> in <?php the_category(', '); ?></small>
+        <a href ="<?php the_permalink(); //link to the posting ?>"><?php the_post_thumbnail( 'thumbnail' ); // the featured image ?></a>
+        <p class="read-more"><a href="<?php the_permalink(); //link to the posting ?>">Read More &raquo;</a></p>
+    </article>
+<?php endwhile; endif; //end the loop?>
+<small>index.php</small>
 </div>
-<br>
-<br>
-<br>
-</div>
+
+
+<!--End Content-->
 
 <?php get_footer(); ?>
